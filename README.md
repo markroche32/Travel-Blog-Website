@@ -59,6 +59,16 @@ CREATE TABLE IF NOT EXISTS `posts` (
 
 - XAMMP Server with MySQL was used by me
 
+## Running Travel-Blog-Website
+
+- navigate to root folder : Travel-Blog-Website and run ng serve
+
+This will run the Frontend on localhost:4200
+
+- navigate to backend folder : backend and run node server
+
+This will run the Backend on localhost:3000
+
 
 ## Running unit tests
 
