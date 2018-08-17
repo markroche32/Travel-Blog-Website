@@ -14,6 +14,28 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
+## Setup
+
+Download project and install the required node modules for frontend and backend :-
+
+- navigate to root folder : Travel-Blog-Website and run ng install
+- navigate to backend folder : backend and run node install
+
+Download MySQL instance and and setup the database with following :-
+
+- 
+
+var connection = mysql.createConnection({
+	host: 'localhost',
+	user: 'root',
+	password: '',
+	database: 'webpackcli'
+});
+
+
+- XAMMP Server with MySQL was used by me
+
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
