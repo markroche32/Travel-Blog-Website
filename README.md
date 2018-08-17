@@ -23,8 +23,6 @@ Download project and install the required node modules for frontend and backend 
 
 Download MySQL instance and and setup the database with following :-
 
-- 
-
 var connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
@@ -32,6 +30,32 @@ var connection = mysql.createConnection({
 	database: 'webpackcli'
 });
 
+
+CREATE TABLE IF NOT EXISTS `users` (
+
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  PRIMARY KEY (`username`),
+  UNIQUE KEY `user_id` (`id`)
+  
+) 
+
+
+
+CREATE TABLE IF NOT EXISTS `posts` (
+
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `title` varchar(250) DEFAULT NULL,
+  `destination` varchar(250) DEFAULT NULL,
+  `experience` varchar(4000) DEFAULT NULL,
+  `imagepath` varchar(250) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`)
+  
+)
 
 - XAMMP Server with MySQL was used by me
 
